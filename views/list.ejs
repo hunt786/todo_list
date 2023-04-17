@@ -1,0 +1,36 @@
+<%-include("header.ejs")-%>
+
+
+
+
+    <div class="box" id="heading">
+        <h1>
+            <%=kindofday%><br>
+
+                TO DO LIST
+        </h1>
+    </div>
+    <div class="box">
+
+
+
+
+        <% for(var i=0;i<newListItem.length;i++) {%>
+            <div class="item">
+                <input type="checkbox" name="" id="">
+                <p>
+                    <%= newListItem[i] %>
+                </p>
+            </div>
+            <% }%>
+
+
+
+
+                <form action="/" method="post" class="item">
+                    <input type="text" placeholder="enter here" name="input">
+                    <button type="submit">+</button>
+                </form>
+
+    </div>
+    <%-include("footer.ejs")-%>
